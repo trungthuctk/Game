@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <title>:P</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing: border-box;
+}
+body{
+    background: #f5f5f5;
+}
+header{
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 70px;
+    width: 100%;
+}
+.container{
+    min-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1116px;
+
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.thehouse{
+    float: left;
+    width: 25%;
+}
+.logo{
+    font-size: 100%;
+    padding-bottom:0px;
+    vertical-align: baseline;
+    height: 70px;
+    padding-top: 4px;
+    padding-left: 20px;
+    width: 280px;
+    color: #ffffff;
+    background-color: black;
+    
+}
+.h{
+    margin: 10px 0 10px;
+    font-size: 20px;
+}
+.header-menu{
+    width: 75%;
+    float: left;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    font-weight: 300;
+    line-height: 1.42857143;
+    display: block;
+
+}
+.header-menu-ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.dropbtn{
+    background-color:#000;
+    color: white;
+    font-weight: 700;
+    padding-top:7px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    display: block;
+}
+
+.header-menu-ul-li {
+    display: inline-block;
+    padding:23px 0px 0px;
+    position: relative;
+    
+}
+.header-menu-ul-li-content {
+    display: none;
+    position:absolute;
+    background-color: #ffffff;
+    width: 400px;
+    text-align: left;
+    min-width: 130px;
+    box-shadow:black;
+    z-index: 99;
+    
+}
+
+.header-menu-ul-li-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+}
+.header-menu-ul-li-content a:hover {border-bottom: 4px solid #EA8025;}
+
+.header-menu-ul-li:hover .header-menu-ul-li-content {
+    display: block;
+}
+
+.header-menu-ul-li:hover .dropbtn {
+    border-bottom: 4px solid #EA8025;
+    padding-bottom: 19px;
+}
+
+.img-bia{
+    height: 380px; 
+    width: 1280px; 
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.collection_menu_wrap {
+    padding: 100px 0 50px;
+    height: 6150px;
+}
+.container2{
+    min-width: 1140px;
+    margin-right: auto;
+    margin-left: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.div-bar-menu{
+}
+.bar-menu{
+   float: left;
+   height:6000px;
+    
+}
+.bar-menu-ul{
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.bar-menu-ul-li{
+    padding: 12px 30px;
+    
+}
+.bar-menu-ul-li a{
+    font-size: 15px;
+    font-weight: 800;
+    color: #000;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    text-decoration: none;
+}
+.bar-menu-ul-li a:hover,a::after{
+   
+    color: #EA8025;
+}
+
+.div-mon{
+    min-width:880px;
+    float: left;
+    width: 70%;
+    font-size: 100%;
+    margin-left: 10px;
+    border-left: 3px solid #EA8025;
+
+}
+.menu-item{
+    color: #000;
+    margin: 0;
+}
+.flex-container {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+ 
+}
+.flex-container > div {
+    background-color: #fff;
+    width: 250px;
+    margin: 10px;
+    line-height: 45px;
+    font-size: 13px;
+    flex:25%;
+}
+.menu_item{
+    margin: 0px 15px 20px;
+}
+.menu_item-h3{
+    
+    font-size: 20px;
+    color: #000;
+    margin: 0;
+    line-height: 1.4;
+    
+}
+.menu_item-h3-p{
+    border-bottom: 4px solid #EA8025 ;
+    float: none;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    display: inline-block;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+
+}
+.icon{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.div-gia{
+    background: #fff;
+    padding: 12px 15px;
+    position: relative;
+}
+.h3_tenmon{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+}
+.h3_tenmon a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.h3_tenmon a:hover{
+    color: #EA8025; 
+}
+.p_gia{
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    font-weight: 700;
+    color: #EA8025;
+    margin-bottom: 10px;
+    font-size: 16px;
+    margin: 0;
+}
+.muangay{
+    margin: 0 px;
+}
+.muangay a{
+    border: 2px solid #EA8025;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #EA8025;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 16px;
+    
+}
+.muangay a:hover{
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    background: transparent;
+    color: #EA8025 ;
+}
+.footer{
+    max-width: 1280px;
+    background-color: #000;
+    padding-top: 50px;
+    height: 440px;
+    padding-bottom: 20px;
+}
+.div_about{
+    float: left;
+    width: 30%;
+    color: #fff;
+    position: relative;
+    min-height: 1px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+.div_about p{
+    color: #fff;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 50;
+    font-size: 14px;
+}
+.div_about a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 50;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+    <div class="row">
+        <div class="thehouse">
+            <div class="logo">
+                <h2>THE COFFEE HOUSE</h2>
+            </div>  
+        </div>
+        <div class="header-menu">
+            <ul class="header-menu-ul">
+                <li class="header-menu-ul-li"> 
+                    <button class=" dropbtn" title="Câu chuyện thương hiệu">CÂU CHUYỆN THƯƠNG HIỆU</button>
+                    <div class="header-menu-ul-li-content">  
+                            <a title="Câu chuyện thương hiệu">THÔNG TIN BÁO CHÍ</a>                          
+                            <a title="Câu chuyện thương hiệu">TRÁCH NHIỆM CỘNG ĐỒNG</a>     
+                    </div>                 
+                </li>
+
+                <li class="header-menu-ul-li"> 
+                    <button class=" dropbtn" title="Chuyện Coffee">CHUYỆN COFFEE</button>
+                    <div class="header-menu-ul-li-content">
+                            <a title="Chuyện Coffee">HÀNH TRÌNH TỪ NÔNG TRẠI ĐẾN LY COFFEE</a>
+                            <a title="Chuyện Coffee">HẠT CÀ PHÊ THE COFFEE HOUSEHOUSE</a>
+                            <a title="Chuyện Coffee">NGHỆ THUẬT PHA CHẾ</a>
+                            <a title="Chuyện Coffee">WORKSHOP COFFEE</a>
+                    </div>
+                </li>
+                <li class="header-menu-ul-li">
+                    <button class="dropbtn" title="Thực Đơn">THỰC ĐƠN</button>
+                </li>
+                <li class="header-menu-ul-li">
+                    <button class="dropbtn" title="Ưu Đãi Thành Viên">ƯU ĐÃI THÀNH VIÊN</button>
+                </li>
+                <li class="header-menu-ul-li">
+                    <button class="dropbtn" title="Tin Tức">TIN TỨC</button>
+                </li>
+                <li class="header-menu-ul-li">
+                    <button class="dropbtn" title="Tuyển Dụng">TUYỂN DỤNG</button>
+                </li>
+                <li class="header-menu-ul-li">
+                    <button class="dropbtn" title="Cửa Hàng">CỬA HÀNG</button>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+</div>
+</header>
+
+<div style="width: 1200px; height: 380px; margin-left: -8px; margin-right: -8px;">
+    <img class="img-bia" src="bia.png">
+</div>
+
+<div class=" collection_menu_wrap">
+    
+    <div class=" container2">
+        <div class=" row">
+            <div class=" div-bar-menu">
+                <div class=" bar-menu">
+                  
+                    <ul class=" bar-menu-ul">
+                        <li class=" bar-menu-ul-li">
+                            <a href="#mon_noi_bat">MÓN NỔI BẬT</a>
+                        </li>
+                        <li class=" bar-menu-ul-li">
+                            <a href="#caffee">CÀ PHÊ</a>
+                        </li>
+                        <li class=" bar-menu-ul-li">
+                            <a href="#tra_macchiano">TRÀ & MACCHIANO</a>
+                        </li>
+                        <li class=" bar-menu-ul-li">
+                            <a href="#thuc_uong_da_xay">THỨC UỐNG ĐÁ XAY</a>
+                        </li>
+                        <li class=" bar-menu-ul-li">
+                            <a href="#thuc_uong_trai_cay">THỨC UỐNG TRÁI CÂY</a>
+                        </li>
+                        <li class=" bar-menu-ul-li">
+                            <a href="#banh&scack">BÁNH & SNACK</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-mon">
+                <div class=" menu_item">
+                    <h3 class=" menu_item-h3" id="mon_noi_bat">
+                       <p class=" menu_item-h3-p"> MÓN NỔI BẬT</p>
+                    </h3>
+                    <div class="flex-container">
+                        <div class="menu_item">
+                            <img class="icon" src="tra_cam_vang.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ CAM VÀNG </a>
+                                </h3>
+                                <p class="p_gia">55.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="cam_vang_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CAM VÀNG CHANH ĐÁ XAY </a>
+                                </h3>
+                                <p class="p_gia">62,000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_buoi_mat_ong.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ BƯỞI MẬT ONG </a>
+                                </h3>
+                                <p class="p_gia">50.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_lai_macchiato.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ LÀI MACCHIATO </a>
+                                </h3>
+                                <p class="p_gia">42.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="cafe_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CÀ PHÊ ĐÁ XAY </a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_cafe_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ CÀ PHÊ ĐÁ XAY </a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_buoi_mat_ong.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ BƯỞI MẬT ONG (NÓNG)</a>
+                                </h3>
+                                <p class="p_gia">55.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <h3 class=" menu_item-h3" id="caffee">
+                        <p class=" menu_item-h3-p"> CÀ PHÊ</p>
+                    </h3>
+                    <div class="flex-container">
+                        <div class="menu_item">
+                            <img class="icon" src="AMERICANO.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">AMERICANO </a>
+                                </h3>
+                                <p class="p_gia">39.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="bac_siu.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">BẠC SỈU </a>
+                                 </h3>
+                                 <p class="p_gia">29,000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="cafe_den.png">
+                             <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CÀ PHÊ ĐEN</a>
+                                </h3>
+                                <p class="p_gia">29.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="cafe_sua.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CÀ PHÊ SỮA </a>
+                                </h3>
+                                <p class="p_gia">29.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="cappucinno.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">CAPPUCINNO</a>
+                                 </h3>
+                                 <p class="p_gia">45.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="caramel_macchito.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">CARAMEL MACCHIATO </a>
+                                 </h3>
+                                 <p class="p_gia">55.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="cold_brew_cam_sa.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">COLD BREW CAM SẢ</a>
+                                 </h3>
+                                 <p class="p_gia">45.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <h3 class=" menu_item-h3" id="tra_macchiano">
+                        <p class=" menu_item-h3-p">TRÀ & MACCHIATO</p>
+                    </h3>
+                    <div class="flex-container">
+                        <div class="menu_item">
+                            <img class="icon" src="tra_cherry_macchiato.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ CHERRY MACCHIATO</a>
+                                </h3>
+                                <p class="p_gia">55.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_dao_cam_sa.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ ĐÀO CAM SẢ</a>
+                                 </h3>
+                                 <p class="p_gia">45,000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="tra_den_macchiato.png">
+                             <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ ĐEN MACCHIATO</a>
+                                </h3>
+                                <p class="p_gia">42.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="tra_matcha_latte.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">TRÀ MATCHA LATTE</a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="tra_matcha_machiato.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">TRÀ MATCHA MACCHIATO</a>
+                                 </h3>
+                                 <p class="p_gia">45.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="tra_oolong_sen_an_nhien.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">TRÀ OOLONG SEN AN NHIÊN</a>
+                                 </h3>
+                                 <p class="p_gia">45.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="tra_oolong_vai_nhu_y.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">TRÀ OOLONG VẢI NHƯ Ý</a>
+                                 </h3>
+                                 <p class="p_gia">45.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <h3 class="menu_item-h3" id="thuc_uong_da_xay">
+                        <p class=" menu_item-h3-p">THỨC UỐNG ĐÁ XAY</p>
+                    </h3>
+                    <div class="flex-container">
+                        <div class="menu_item">
+                            <img class="icon" src="chanh_sa_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CHANH SẢ ĐÁ XAY</a>
+                                </h3>
+                                <p class="p_gia">49.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="chocolate_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">CHOCOLATE ĐÁ XAY</a>
+                                 </h3>
+                                 <p class="p_gia">59,000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="cookies_da_xay.png">
+                             <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">COOKIES ĐÁ XAY</a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="dao_viet_quat_da_xay.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">ĐÀO VIỆT QUẤT ĐÁ XAY</a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="macha_da_xay.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">MATCHA ĐÁ XAY</a>
+                                 </h3>
+                                 <p class="p_gia">59.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="oi_hong_viet_quat_da_xay.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">ỔI HỒNG VIỆT QUẤT ĐÁ XAY</a>
+                                 </h3>
+                                 <p class="p_gia">55.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="menu_item">
+                             <img class="icon" src="phuc_bon_tu_cam_da_xay.png">
+                             <div class="div-gia">
+                                 <h3 class=" h3_tenmon">
+                                     <a href="#">PHÚC BỒN TỬ CAM ĐÁ XAY</a>
+                                 </h3>
+                                 <p class="p_gia">59.000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <h3 class=" menu_item-h3" id="thuc_uong_trai_cay">
+                        <p class=" menu_item-h3-p">THỨC UỐNG TRÁI CÂY</p>
+                    </h3>
+                    <div class="flex-container">
+                        <div class="menu_item">
+                            <img class="icon" src="sinh_to_cam_xoai.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">SINH TỐ CAM XOÀI</a>
+                                </h3>
+                                <p class="p_gia">59.000 Đ</p>
+                                <div class="muangay">
+                                    <a href="#"> MUA NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_item">
+                            <img class="icon" src="sinh_to_viet_quat.png">
+                            <div class="div-gia">
+                                <h3 class=" h3_tenmon">
+                                    <a href="#">SINH TỐ VIỆT QUẤT</a>
+                                 </h3>
+                                 <p class="p_gia">59,000 Đ</p>
+                                 <div class="muangay">
+                                     <a href="#"> MUA NGAY</a>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer class=" footer">
+    <div class="container2">
+        <div class="row2">
+            <div class=" div_about" style="width: 100px;
+            height: 72px;">
+                <h2>THE COFFFE HOUSE</h2>
+            </div>
+            <div class=" div_about" style="padding-left:7%;">
+                <h2>ABOUT</h2>
+                <ul style="padding-left: 0px; list-style: none;">
+                    <li>
+                        <a href="#">Về Chúng Tôi</a>
+                    </li>
+                    <li><a href="#">Hạt Cà Phê The Coffee House</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Cơ Hội Nghề Nghiệp</a></li>
+                    <li><a href="#">Cửa Hàng</a></li>
+                </ul>
+            </div>
+            <div class=" div_about" style="float: right;">
+                <h2>DELIVERY</h2>
+                <ul style="padding-left:0px; list-style: none;">
+                    <li> <a href="#">Shipping methods</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Return</a></li>
+                    <li><a href="#">Exchange</a></li>
+                </ul>
+            </div>
+            <div class=" div_about" style="float:right; padding-right: 5%;">
+                <h2>ALWAYS-ON SUPPORT</h2>
+                <p>Delivery 1800 6936 (07:00-21:00)</p>
+                <p>Support 02871 087 088 (07:00-21:00)</p>
+                <h2>ADDDRESS</h2>
+                <p>62 Tran Quang Khai, Tan Dinh,<br> Quan 1 Ho Chi Minh, Vietnam</p>
+                <p>02871 087 088</p>
+                <p>hi@thecoffeehouse.vn</p>
+            </div>
+           
+          
+        </div>
+        <br>
+        <div  style="color: #fff; margin-top: 290px;">
+            <hr>
+            <div style="">
+                <p>Copyright © 2018 The Coffee House. All rights reserved.</p>
+            </div>
+        </div>
+        
+    </div>
+</html>
