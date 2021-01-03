@@ -279,7 +279,7 @@ main {
     z-index: 1;
 }
 .menu_item_info.bg_white h3 {
-    height: 65px;
+    /* height: 65px; */
     max-height: 65px;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -428,7 +428,7 @@ footer {
 }
 #myScrollspy a.nav-link.active {
     background-color: #ffffff;
-    color: #2b3687;
+    color: #3750b2;
 }
 @media (min-width: 576px)
     {

@@ -206,17 +206,17 @@ header {
     float: left;
     width: 40px;
     height: 40px;
-    color: #EA8025;
+    color: #3750b2;
 }
 .plus{
     padding-left: 40px;
     width: 40px;
     height: 40px;
-    color: #EA8025;
+    color:#3750b2;
 }
 .modal_tien{
     color: #fff;
-    background-color: #EA8025;
+    background-color: #3750b2;
     font-size: 20px;
     float: right;
     
@@ -286,13 +286,13 @@ header {
     display: block;
     font-weight: 700;
 }
-.header-menu-ul-li-content a:hover {border-bottom: 4px solid #EA8025;}
+.header-menu-ul-li-content a:hover {border-bottom: 4px solid #3750b2;}
 
 .header_menu ul li:hover .header-menu-ul-li-content {
     display: block;
 }
 .header_menu ul li:hover .dropbtn {
-    border-bottom: 4px solid #EA8025;
+    border-bottom: 4px solid #3750b2;
     padding-bottom: 15px;
 }
 
@@ -331,14 +331,14 @@ main {
     padding:15px 100px;
     color: #fff;
     font-size: 14px;
-    background-color: #EA8025;
+    background-color: #3750b2;
     
     min-width: 100%;
 }
 .dathang a:hover{
     text-decoration: none;
     color: #fff;
-    background-color: rgb(230, 119, 22);
+    background-color: #1b2c6e;
 }
 .thanhtoan{
     padding: 0 20px;
@@ -349,7 +349,7 @@ main {
 
 .bang{
     color: #fff;
-    background-color:#EA8025;
+    background-color:#3750b2;
     text-align: center;
     font-weight: 700;
 }
@@ -359,7 +359,7 @@ main {
     text-align: center;
     font-size: 15px;
     padding: 0px 12px;
-    background-color: rgb(252, 157, 73);
+    background-color: #1b2c6e;
     border-radius: 2px;
 }
 .tenmon{
@@ -419,6 +419,9 @@ footer {
     margin-top: 30px;
     padding: 20px 0 0;
 }
+.display_flex {
+    display: flex;
+}
 .copyright_footer .copyright_col {
     color: #fff;    
 }
@@ -474,7 +477,7 @@ tr{
     padding-bottom: 6px; 
 }
 #giohang {
-    background-color: #EA8025;
+    background-color: #3750b2;
     padding: 4px 10px; 
     padding-bottom: 6px;  
     border-radius: 100%;

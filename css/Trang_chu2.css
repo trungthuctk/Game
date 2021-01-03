@@ -581,4 +581,9 @@ footer {
         margin-left: 70px;
     }
 }
-
+#giohang {
+    background-color: #3750b2;
+    padding: 4px 10px;   
+    padding-bottom: 6px;  
+    border-radius: 100%;
+    color: #fff;
